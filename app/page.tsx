@@ -10,7 +10,7 @@ export default function Home() {
       
       <div className="flex-grow relative w-full h-full">
         <img 
-          src="https://www.dropbox.com/scl/fi/rxood5aqarmhktzzh8gkj/cs_interpolated.gif?rlkey=mxzxr99tpz87nvaqkv17cera4&st=00929bgv&dl=1"  // Use the direct link
+          src="https://www.dropbox.com/scl/fi/0egdzs809hiy5hvszqmjn/cs_interpolated.gif?rlkey=0fl9rh2x6emvknobzfsv3kjtl&st=qnrk3i3i&dl=1"  // Use the direct link
           alt="Coming Soon Animation"
           className="absolute inset-0 w-full h-full object-cover"
         />
