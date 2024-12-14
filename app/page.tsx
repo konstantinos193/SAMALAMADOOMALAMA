@@ -11,11 +11,12 @@ export default function Home() {
       
       <div className="flex-grow relative w-full h-full">
         <Image 
-          src="https://www.dropbox.com/scl/fi/0egdzs809hiy5hvszqmjn/cs_interpolated.gif?rlkey=0fl9rh2x6emvknobzfsv3kjtl&dl=1"
+          src="https://yappy-chocolate-squid.myfilebase.com/ipfs/QmbctsUKo4JgKTgh89iqfsjDyuKTAegCBXmCHbMExV6v1p"
           alt="Coming Soon Animation"
           fill
           className="object-cover"
           unoptimized
+          loading="eager"
           priority
         />
         
