@@ -2,6 +2,7 @@
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -9,10 +10,13 @@ export default function Home() {
       <Header />
       
       <div className="flex-grow relative w-full h-full">
-        <img 
-          src="https://www.dropbox.com/scl/fi/0egdzs809hiy5hvszqmjn/cs_interpolated.gif?rlkey=0fl9rh2x6emvknobzfsv3kjtl&st=qnrk3i3i&dl=1"  // Use the direct link
+        <Image 
+          src="https://www.dropbox.com/scl/fi/0egdzs809hiy5hvszqmjn/cs_interpolated.gif?rlkey=0fl9rh2x6emvknobzfsv3kjtl&dl=1"
           alt="Coming Soon Animation"
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          className="object-cover"
+          unoptimized
+          priority
         />
         
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[70vh] text-center px-4">
