@@ -2,18 +2,21 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  swcMinify: true, // Use SWC for fast and optimized builds
+  swcMinify: true,
   async redirects() {
     return [
       {
         source: "/(.*)",
-        destination: "https://deape.fi/:path*", // Redirect all traffic to HTTPS
+        has: [
+          {
+            type: "host",
+            value: "deape.fi", // Only apply redirect for the non-HTTPS version
+          },
+        ],
+        destination: "https://deape.fi/:path*",
         permanent: true,
       },
     ];
-  },
-  experimental: {
-    optimizeCss: true, // Optimize Tailwind and global CSS
   },
 };
 
