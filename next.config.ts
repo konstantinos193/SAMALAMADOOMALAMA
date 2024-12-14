@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  swcMinify: true, // Ensure SWC minification is enabled for better performance
+  swcMinify: true, // Use SWC for fast and optimized builds
   async redirects() {
     return [
       {
@@ -13,8 +13,7 @@ const nextConfig: NextConfig = {
     ];
   },
   experimental: {
-    optimizeCss: true, // Ensure CSS optimization for Tailwind
-    legacyBrowsers: false, // Disable support for very old browsers
+    optimizeCss: true, // Optimize Tailwind and global CSS
   },
 };
 
